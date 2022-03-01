@@ -14,4 +14,4 @@ velocidade_media = float(input('Digite a velocidade média em Km/h: '))
 
 tempo_total_horas = distancia / velocidade_media
 
-print(f'\nO tempo estimado é de {tempo_total_horas:.2} horas\n')
+print(f'\nO tempo estimado é de {tempo_total_horas:.2f} horas\n')
