@@ -16,5 +16,7 @@ a saída deve ser
 >>> {“química”: 87, “física”: 83, matemática”: 81}
 
 """
-notas = {'matemática': 81, 'física': 83, 'química': 87} 
-print(sorted(notas, reverse=True))
+notas = {'matemática': 81, 'física': 83, 'química': 87, 'história': 85, 'geografia': 89} 
+notas_ordenadas = dict(sorted(notas.items(), key=lambda nota: nota[1], reverse=True))
+
+print(notas_ordenadas)

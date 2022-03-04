@@ -1,8 +1,20 @@
 """
-# Questão 03
+How Bootcamps - Stone - /código[s]
+Data: 18/02/2022
+Autor: Camila Rodrigues Costa
+Descrição: Exercicio proposto pelo instrutor Henrique Branco.
+Lista de exercícios
+Tema: Desafios
+Diversão do carnaval \o/
 
-Duas palavras podem ser consideradas anagramas de si mesmas se as letras de uma palavra podem ser realocadas para formar a outra palavra. 
-Dada uma string qualquer, desenvolva um algoritmo que encontre o número de pares de substrings que são anagramas.
+Desafio 3:
+Duas palavras podem ser consideradas anagramas de si mesmas se as letras de uma palavra podem ser 
+realocadas para formar a outra palavra. Dada uma string qualquer, desenvolva um algoritmo que 
+encontre o número de pares de substrings que são anagramas.
+
+O que são anagramas? https://pt.wikipedia.org/wiki/Anagrama
+
+Bom divertimento!
 """
 
 # define a função numero_anagramas que recebe como parametro a palavra fornecida
@@ -10,6 +22,8 @@ def numero_anagramas(palavra):
     """
     Parte 1: Retorna todas as substrings da palavra
     """
+    # garantindo que todas as letras estaram minusculas, uma vez que 'a' != 'A'
+    palavra = palavra.lower()
     # lista vazia que ira receber as substrings da palavra
     lista = []
     
@@ -98,7 +112,8 @@ def numero_anagramas(palavra):
     # Imprime a quantidade de anagramas presente na palavra
     print(f'Ela contém {qtd_anagramas} anagramas.')
     # Imprime os anagramas contidos na palavra
-    print(f'Eles são:\n{dict_anagramas}\n')
+    if dict_anagramas:
+        print(f'Eles são:\n{dict_anagramas}\n')
 
 
 # Testes unitarios    
