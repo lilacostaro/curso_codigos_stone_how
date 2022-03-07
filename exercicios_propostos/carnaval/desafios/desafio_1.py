@@ -35,6 +35,7 @@ import random
 
 # Definindo a função jogo
 def jogo():
+    print('Novo Jogo!')
     # Gerando um numero aleatorio entre 0 e 100
     random_number = random.randint(0, 100)
     
@@ -77,7 +78,12 @@ def jogo():
 def jogar():
     # pergunta pro usuario se ele quer ou não continuar jogando
     resposta = input('Você deseja continuar jogando? sim[s], não[n] ').lower()
+    respostas = ['s', 'n']
     
+    # Validando a resposta
+    while resposta not in respostas:
+        resposta = input("Você deseja continuar jogando? Sua resposta deve ser 's' para sim ou 'n' para não: ").lower()
+   
     # se a resposta for sim, chama a função jogo
     if resposta == 's':
         jogo()
