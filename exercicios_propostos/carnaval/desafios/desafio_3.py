@@ -124,6 +124,7 @@ if __name__=='__main__':
     numero_anagramas('bolo')
     numero_anagramas('kamizaze')
     numero_anagramas('Python')
+    numero_anagramas('Jabuticaba')
 
 
 

@@ -34,8 +34,9 @@ Pesquise sobre o módulo buit-in do Python chamado random
 import random
 
 # Definindo a função jogo
+WIN_LOSE = []
 def jogo():
-    
+    """Inicia o jogo!"""
     # Gerando os números aléatorios entre 1 e 6 e somando eles
     dado_1 = random.randint(1, 6)
     dado_2 = random.randint(1, 6)
@@ -52,14 +53,17 @@ def jogo():
         
     # checando se o numero do usúario corresponde ao numero sorteado
     if numero == soma:
+        WIN_LOSE.append('w')
         print(f'\nParabéns! Você acertou a soma dos dados! O valor do primeiro dado é {dado_1} e o do segundo é {dado_2}.')
     else:
+        WIN_LOSE.append('l')
         print(f'\nVocê errou. A soma dos dados é {soma}. O valor do primeiro dado é {dado_1} e o do segundo é {dado_2}. ')
         
     jogar()
     
 # Definindo a função jogar
 def jogar():
+    """Pergunta se o jogador quer continuar jogando!"""
     # pergunta pro usuario se ele quer ou não continuar jogando
     resposta = input('Você deseja continuar jogando? sim[s], não[n] ').lower()
     respostas = ['s', 'n']
@@ -73,7 +77,8 @@ def jogar():
         jogo()
     # se a resposta for não, imprime a mensagem e encerra o programa    
     elif resposta == 'n':
-        print('Jogo encerrado')
+        print('\nJOGO ENCERRADO!')
+        print(f'Voce jogou {len(WIN_LOSE)} vez(es). Ganhou {WIN_LOSE.count("w")} vez(es) e perdeu {WIN_LOSE.count("l")} vez(es)!')
         
 if __name__=='__main__':
     jogo()

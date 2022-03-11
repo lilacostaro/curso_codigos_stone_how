@@ -7,12 +7,12 @@ Parte do livro Introdução à Programação com Python
 Exercício 03-01: Complete a tabela com o tipo numérico correspondente
 Complete a tabela a seguir, marcando inteiro ou ponto flutuante dependendo do número apresentado.
 Número      Tipo numérico
-    5      ○ inteiro ○ ponto flutuante
-    5.0    ○ inteiro ○ ponto flutuante
-    4.3    ○ inteiro ○ ponto flutuante
-    -2     ○ inteiro ○ ponto flutuante
-    100    ○ inteiro ○ ponto flutuante
-    1.333  ○ inteiro ○ ponto flutuante
+  5         ○ inteiro ○ ponto flutuante
+  5.0       ○ inteiro ○ ponto flutuante
+  4.3       ○ inteiro ○ ponto flutuante
+  -2        ○ inteiro ○ ponto flutuante
+  100       ○ inteiro ○ ponto flutuante
+  1.333     ○ inteiro ○ ponto flutuante
 """
 
 a = 5
