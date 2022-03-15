@@ -29,7 +29,7 @@ def pesos():
     if pesos_notas =='S':
         com_pesos(numero_alunos, numero_notas)
     elif pesos_notas =='N':
-        sem_pesoss(numero_alunos, numero_notas)
+        sem_pesos(numero_alunos, numero_notas)
         
 def com_pesos(num_aluno, num_nota):
     alunos = {}
